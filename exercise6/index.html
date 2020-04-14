@@ -1,15 +1,118 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
+	<meta charset="utf-8">
 
-  <title>CSS Exercise 6</title>
+	<title>CSS Exercise 6</title>
 
-  <style>
-  	
-  </style>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.div1 {
+			position: absolute;
+			height: 100px;
+			width: 100px;
+			margin: 40px 20px;
+			z-index: 100;
+			transform: rotate(15deg);
+			background-color: plum;
+			border: 4.8px solid plum;
+
+		}
+
+		.div1::before {
+			position: absolute;
+			content: "";
+			height: 100px;
+			width: 100px;
+			border: 4.8px solid white;
+			transform: translate(-5px, -5px);
+		}
+
+		.div2 {
+			position: absolute;
+			left: 90px;
+			top: 10px;
+			z-index: -10;
+			height: 100px;
+			width: 100px;
+			background-color: red;
+
+		}
+
+		.div3 {
+			position: absolute;
+			left: 100px;
+			top: 50px;
+			height: 100px;
+			width: 100px;
+			z-index: 90;
+			transform: rotate(35deg);
+			background-color: blue;
+			border: 4.8px solid blue;
+
+		}
+
+		.div3::before {
+			position: absolute;
+			content: "";
+			height: 100px;
+			width: 100px;
+			border: 4.8px solid white;
+			transform: translate(-5px, -5px);
+		}
+
+		.div4 {
+			position: absolute;
+			left: 175px;
+			top: 100px;
+			height: 100px;
+			width: 100px;
+			z-index: 80;
+			transform: rotate(60deg);
+			background-color: yellow;
+			border: 4.8px solid yellow;
+
+		}
+
+		.div4::before {
+			position: absolute;
+			content: "";
+			height: 100px;
+			width: 100px;
+			border: 4.8px solid white;
+			transform: translate(-5px, -5px);
+		}
+
+		.div5 {
+			position: absolute;
+			left: 235px;
+			top: 10px;
+			height: 100px;
+			width: 100px;
+			z-index: 70;
+			transform: rotate(-15deg);
+			background-color: orange;
+			border: 4.8px solid orange;
+
+		}
+
+		.div5::before {
+			position: absolute;
+			content: "";
+			height: 100px;
+			width: 100px;
+			border: 4.8px solid white;
+			transform: translate(-5px, -5px);
+		}
+	</style>
 </head>
+
 <body>
 	<!-- Do not touch the HTML please -->
 	<div class="container">
@@ -20,4 +123,5 @@
 		<div class="interior div5"></div>
 	</div>
 </body>
+
 </html>
