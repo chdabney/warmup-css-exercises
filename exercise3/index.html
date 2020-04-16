@@ -8,80 +8,72 @@
 	<title>CSS Exercise 3</title>
 
 	<style>
-		.div1 {
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+
+
+		.interior {
+			margin: 10px;
+			position: absolute;
 			height: 100px;
 			width: 100px;
-			margin: 15px;
 			background-color: blue;
 
 		}
 
+		.div1 {
+			top: 0;
+			left: 0;
+		}
+
 		.div2 {
-			height: 100px;
-			width: 100px;
-			margin: 15px;
-			position: absolute;
-			top: 0px;
+			top: 0;
 			left: 120px;
-			background-color: blue;
+
 
 		}
 
 		.div3 {
-			height: 100px;
-			width: 100px;
-			margin: 15px;
-			background-color: blue;
-
+			top: 120px;
 		}
 
 		.div4 {
-			height: 100px;
-			width: 100px;
-			margin: 15px;
-			position: absolute;
-			top: 115px;
+			top: 120px;
 			left: 120px;
-			background-color: blue;
-
 		}
 
 		.div5 {
-			height: 100px;
-			width: 100px;
-			position: absolute;
-			top: 72px;
-			left: 80px;
+			top: 60px;
+			left: 60px;
 			background-color: red;
 			transform: rotate(45deg);
-
 		}
 
 		.div5::before {
-			display: block;
-			height: 30px;
-			width: 30px;
 			position: absolute;
-			top: 16px;
-			left: 15px;
-			margin: 10px;
+			left: 25px;
+			top: 25px;
+			display: block;
 			content: "";
-			border: 10px solid white;
+			height: 45px;
+			width: 45px;
 			background-color: white;
+			border: 1px solid white;
 			border-radius: 50%;
 		}
 
 		.div5::after {
-			display: block;
-			padding: 5px;
-			margin: 10px;
 			position: absolute;
-			top: 15px;
-			left: 23px;
+			left: 40px;
+			top: 30px;
+			display: inline-block;
 			content: "\2605";
-			font-size: 30px;
-			transform: rotate(-45deg);
-
+			transform: rotate(30deg);
+			font-size: larger;
 		}
 	</style>
 </head>

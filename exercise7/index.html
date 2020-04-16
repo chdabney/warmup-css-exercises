@@ -11,158 +11,163 @@
 		* {
 			margin: 0;
 			padding: 0;
+			box-sizing: border-box;
 		}
 
-
-
-		.div1 {
+		.interior {
 			position: absolute;
-			margin: 20px;
-			left: 240px;
 			height: 100px;
 			width: 100px;
+			margin: 10px;
+		}
+
+		.div1 {
 			background-color: red;
+			left: 240px;
 		}
 
 		.div1::before {
+			position: absolute;
+			top: 0;
+			left: -120px;
 			content: "";
+			background-color: red;
 			height: 100px;
 			width: 100px;
-			position: absolute;
-			background-color: red;
-			opacity: 50%;
-			transform: translate(-240px, 0px);
+			opacity: 75%;
+
 		}
 
-
 		.div1::after {
+			position: absolute;
+			top: 0;
+			left: -240px;
 			content: "";
+			background-color: red;
 			height: 100px;
 			width: 100px;
-			position: absolute;
-			background-color: red;
-			opacity: 75%;
-			transform: translate(-120px, 0px);
+			opacity: 50%;
+
 		}
 
 		.div2 {
-			position: absolute;
-			margin: 20px;
-			left: 240px;
-			top: 120px;
-			height: 100px;
-			width: 100px;
 			background-color: orange;
+			top: 120px;
+			left: 240px;
 		}
 
 		.div2::before {
+			position: absolute;
+			top: 0;
+			left: -120px;
 			content: "";
+			background-color: orange;
 			height: 100px;
 			width: 100px;
-			position: absolute;
-			background-color: orange;
-			opacity: 50%;
-			transform: translate(-240px, 0px);
+			opacity: 75%;
+
 		}
 
 		.div2::after {
+			position: absolute;
+			top: 0;
+			left: -240px;
 			content: "";
+			background-color: orange;
 			height: 100px;
 			width: 100px;
-			position: absolute;
-			background-color: orange;
-			opacity: 75%;
-			transform: translate(-120px, 0px);
+			opacity: 50%;
+
 		}
 
 		.div3 {
-			position: absolute;
-			margin: 20px;
-			left: 240px;
-			top: 240px;
-			height: 100px;
-			width: 100px;
 			background-color: yellow;
+			top: 240px;
+			left: 240px;
 		}
 
 		.div3::before {
+			position: absolute;
+			top: 0;
+			left: -120px;
 			content: "";
+			background-color: yellow;
 			height: 100px;
 			width: 100px;
-			position: absolute;
-			background-color: yellow;
-			opacity: 50%;
-			transform: translate(-240px, 0px);
+			opacity: 75%;
+
 		}
 
 		.div3::after {
+			position: absolute;
+			top: 0;
+			left: -240px;
 			content: "";
+			background-color: yellow;
 			height: 100px;
 			width: 100px;
-			position: absolute;
-			background-color: yellow;
-			opacity: 75%;
-			transform: translate(-120px, 0px);
+			opacity: 50%;
+
 		}
 
 		.div4 {
-			position: absolute;
-			margin: 20px;
-			left: 240px;
-			top: 360px;
-			height: 100px;
-			width: 100px;
 			background-color: blue;
+			top: 360px;
+			left: 240px;
 		}
 
 		.div4::before {
+			position: absolute;
+			top: 0;
+			left: -120px;
 			content: "";
+			background-color: blue;
 			height: 100px;
 			width: 100px;
-			position: absolute;
-			background-color: blue;
-			opacity: 50%;
-			transform: translate(-240px, 0px);
+			opacity: 75%;
+
 		}
 
 		.div4::after {
+			position: absolute;
+			top: 0;
+			left: -240px;
 			content: "";
+			background-color: blue;
 			height: 100px;
 			width: 100px;
-			position: absolute;
-			background-color: blue;
-			opacity: 75%;
-			transform: translate(-120px, 0px);
+			opacity: 50%;
+
 		}
 
 		.div5 {
-			position: absolute;
-			margin: 20px;
-			left: 240px;
-			top: 480px;
-			height: 100px;
-			width: 100px;
 			background-color: plum;
+			top: 480px;
+			left: 240px;
 		}
 
 		.div5::before {
+			position: absolute;
+			top: 0;
+			left: -120px;
 			content: "";
+			background-color: plum;
 			height: 100px;
 			width: 100px;
-			position: absolute;
-			background-color: plum;
-			opacity: 50%;
-			transform: translate(-240px, 0px);
+			opacity: 75%;
+
 		}
 
 		.div5::after {
+			position: absolute;
+			top: 0;
+			left: -240px;
 			content: "";
+			background-color: plum;
 			height: 100px;
 			width: 100px;
-			position: absolute;
-			background-color: plum;
-			opacity: 75%;
-			transform: translate(-120px, 0px);
+			opacity: 50%;
+
 		}
 	</style>
 </head>

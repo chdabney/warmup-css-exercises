@@ -7,54 +7,51 @@
 
 	<title>CSS Exercise 2</title>
 
+
 	<style>
-		.div1 {
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+
+
+		.interior {
+			margin: 10px;
+			position: absolute;
 			height: 100px;
 			width: 100px;
-			margin: 15px;
 			background-color: blue;
 
 		}
 
+		.div1 {
+			top: 0;
+			left: 0;
+		}
+
 		.div2 {
-			height: 100px;
-			width: 100px;
-			margin: 15px;
-			position: absolute;
-			top: 0px;
+			top: 0;
 			left: 120px;
-			background-color: blue;
+
 
 		}
 
 		.div3 {
-			height: 100px;
-			width: 100px;
-			margin: 15px;
-			background-color: blue;
-
+			top: 120px;
 		}
 
 		.div4 {
-			height: 100px;
-			width: 100px;
-			margin: 15px;
-			position: absolute;
-			top: 115px;
+			top: 120px;
 			left: 120px;
-			background-color: blue;
-
 		}
 
 		.div5 {
-			height: 100px;
-			width: 100px;
-			position: absolute;
-			top: 72px;
-			left: 80px;
+			top: 60px;
+			left: 60px;
 			background-color: red;
 			transform: rotate(45deg);
-
 		}
 	</style>
 </head>

@@ -11,104 +11,55 @@
 		* {
 			margin: 0;
 			padding: 0;
+			box-sizing: border-box;
+		}
+
+
+
+		.interior {
+			margin: 10px;
+			position: absolute;
+			height: 100px;
+			width: 100px;
+			border: 5px solid white;
+
+
 		}
 
 		.div1 {
-			position: absolute;
-			height: 100px;
-			width: 100px;
-			margin: 40px 20px;
-			z-index: 100;
-			transform: rotate(15deg);
-			background-color: plum;
-
-
-		}
-
-		.div1::before {
-			position: absolute;
-			content: "";
-			height: 90px;
-			width: 90px;
-			border: 5px solid white;
-			transform: translate(.1.5px, -.5px);
+			top: 0;
+			left: 60px;
+			background-color: red;
 		}
 
 		.div2 {
-			position: absolute;
-			left: 90px;
-			top: 10px;
-			z-index: -10;
-			height: 100px;
-			width: 100px;
-			background-color: red;
+			top: 0px;
+			left: 200px;
+			background-color: orange;
+			transform: rotate(-20deg);
+
 
 		}
 
 		.div3 {
-			position: absolute;
-			left: 100px;
-			top: 50px;
-			height: 100px;
-			width: 100px;
-			z-index: 90;
-			transform: rotate(35deg);
-			background-color: blue;
-
-
-		}
-
-		.div3::before {
-			position: absolute;
-			content: "";
-			height: 90px;
-			width: 90px;
-			border: 5px solid white;
-			transform: translate(.1.5px, -.5px);
+			top: 85px;
+			left: 150px;
+			background-color: yellow;
+			transform: rotate(-30deg);
 		}
 
 		.div4 {
-			position: absolute;
-			left: 175px;
-			top: 100px;
-			height: 100px;
-			width: 100px;
-			z-index: 80;
-			transform: rotate(60deg);
-			background-color: yellow;
-
-
-		}
-
-		.div4::before {
-			position: absolute;
-			content: "";
-			height: 90px;
-			width: 90px;
-			border: 5px solid white;
-			transform: translate(.1.5px, -.5px);
+			top: 40px;
+			left: 80px;
+			background-color: blue;
+			transform: rotate(35deg);
 		}
 
 		.div5 {
-			position: absolute;
-			left: 225px;
-			top: 10px;
-			height: 100px;
-			width: 100px;
-			z-index: 70;
-			transform: rotate(-15deg);
-			background-color: orange;
-
-
-		}
-
-		.div5::before {
-			position: absolute;
-			content: "";
-			height: 90px;
-			width: 90px;
-			border: 5px solid white;
-			transform: translate(.1.5px, -.5px);
+			top: 25px;
+			left: 5px;
+			background-color: plum;
+			transform: rotate(20deg);
 		}
 	</style>
 </head>
